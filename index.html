@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chessboard-Redux</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <header>
+    <h1>The Catalan Opening</h1>
+    <h2>(the first nine moves)</h2>
+  </header>
+  <body>
+    <main>
+      <!-- begin column-header-top -->
+      <ul id="column-header-top">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+      </ul>
+      <!-- end column-header-top -->
+
+      <!-- begin column-header-left -->
+      <ul id="column-header-left">
+        <li>8</li>
+        <li>7</li>
+        <li>6</li>
+        <li>5</li>
+        <li>4</li>
+        <li>3</li>
+        <li>2</li>
+        <li>1</li>
+      </ul>
+      <!-- end column-header-left -->
+
+      <!-- begin id chessboard -->
+      <div id="chessboard">
+
+        <!-- begin row-1 -->
+        <ul id="row-1">
+          <li class="odd-light"><span class="chess-piece">&#9820;</span></li>
+          <li class="odd-dark"><span class="chess-piece">&#9822;</span></li>
+          <li class="odd-light"><span class="chess-piece">&#9821;</span></li>
+          <li class="odd-dark"><span class="chess-piece">&#9819;</span></li>
+          <li class="odd-light"><span class="chess-piece">&#9818;</span></li>
+          <li class="odd-dark"><span class="chess-piece">&#9821;</span></li>
+          <li class="odd-light"><span class="chess-piece">&#9822;</span></li>
+          <li class="odd-dark"><span class="chess-piece">&#9820;</span></li>
+        </ul>
+        <!-- end row-1 -->
+
+        <!-- begin row-2 -->
+        <ul id="row-2">
+          <li class="even-dark"><span class="chess-piece">&#9823;</span></li>
+          <li class="even-light"><span class="chess-piece">&#9823;</span></li>
+          <li class="even-dark"><span class="chess-piece">&#9823;</span></li>
+          <li class="even-light"><span class="chess-piece">&#9823;</span></li>
+          <li class="even-dark"><span class="chess-piece">&#9823;</span></li>
+          <li class="even-light"><span class="chess-piece">&#9823;</span></li>
+          <li class="even-dark"><span class="chess-piece">&#9823;</span></li>
+          <li class="even-light"><span class="chess-piece">&#9823;</span></li>
+        </ul>
+        <!-- end row-2 -->
+
+        <!-- begin row-3 -->
+        <ul id="row-3">
+          <li class="odd-light"></li>
+          <li class="odd-dark"></li>
+          <li class="odd-light"></li>
+          <li class="odd-dark"></li>
+          <li class="odd-light"></li>
+          <li class="odd-dark"></li>
+          <li class="odd-light"></li>
+          <li class="odd-dark"></li>
+        </ul>
+        <!-- end row-3 -->
+
+        <!-- begin row-4 -->
+        <ul id="row-4">
+          <li class="even-dark"></li>
+          <li class="even-light"></li>
+          <li class="even-dark"></li>
+          <li class="even-light"></li>
+          <li class="even-dark"></li>
+          <li class="even-light"></li>
+          <li class="even-dark"></li>
+          <li class="even-light"></li>
+        </ul>
+        <!-- end row-4 -->
+
+        <!-- begin row-5 -->
+        <ul id="row-5">
+          <li class="odd-light"></li>
+          <li class="odd-dark"></li>
+          <li class="odd-light"></li>
+          <li class="odd-dark"></li>
+          <li class="odd-light"></li>
+          <li class="odd-dark"></li>
+          <li class="odd-light"></li>
+          <li class="odd-dark"></li>
+        </ul>
+        <!-- end row-5 -->
+
+        <!-- begin row-6 -->
+        <ul id="row-6">
+          <li class="even-dark"></li>
+          <li class="even-light"></li>
+          <li class="even-dark"></li>
+          <li class="even-light"></li>
+          <li class="even-dark"></li>
+          <li class="even-light"></li>
+          <li class="even-dark"></li>
+          <li class="even-light"></li>
+        </ul>
+        <!-- end row-6 -->
+
+        <!-- begin row-7 -->
+        <ul id="row-7">
+          <li class="odd-light"><span class="chess-piece">&#9817;</span></li>
+          <li class="odd-dark"><span class="chess-piece">&#9817;</span></li>
+          <li class="odd-light"><span class="chess-piece">&#9817;</span></li>
+          <li class="odd-dark"><span class="chess-piece">&#9817;</span></li>
+          <li class="odd-light"><span class="chess-piece">&#9817;</span></li>
+          <li class="odd-dark"><span class="chess-piece">&#9817;</span></li>
+          <li class="odd-light"><span class="chess-piece">&#9817;</span></li>
+          <li class="odd-dark"><span class="chess-piece">&#9817;</span></li>
+        </ul>
+        <!-- end row-7 -->
+
+        <!-- begin row-8 -->
+        <ul id="row-8">
+          <li class="even-dark"><span class="chess-piece">&#9814;</span></li>
+          <li class="even-light"><span class="chess-piece">&#9816;</span></li>
+          <li class="even-dark"><span class="chess-piece">&#9815;</span></li>
+          <li class="even-light"><span class="chess-piece">&#9813;</span></li>
+          <li class="even-dark"><span class="chess-piece">&#9812;</span></li>
+          <li class="even-light"><span class="chess-piece">&#9815;</span></li>
+          <li class="even-dark"><span class="chess-piece">&#9816;</span></li>
+          <li class="even-light"><span class="chess-piece">&#9814;</span></li>
+        </ul>
+        <!-- end row-8 -->
+
+      </div>
+      <!-- end id chessboard -->
+
+      <!-- begin column-header-right -->
+      <ul id="column-header-right">
+        <li>8</li>
+        <li>7</li>
+        <li>6</li>
+        <li>5</li>
+        <li>4</li>
+        <li>3</li>
+        <li>2</li>
+        <li>1</li>
+      </ul>
+      <!-- end column-header-right -->
+
+      <!-- begin column-header-bottom -->
+      <ul id="column-header-bottom">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+      </ul>
+      <!-- end column-header-bottom -->
+
+    </main>
+  </body>
+</html>
